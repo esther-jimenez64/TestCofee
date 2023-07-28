@@ -94,6 +94,9 @@ figure{
 .boxcard4 figure:hover {
   box-shadow: 1px 1px 15px 15px #7b7be885;
 }
+.boxcard7 figure:hover {
+  box-shadow: 1px 1px 15px 15px #7b7be885;
+}
 
 
 
@@ -167,6 +170,7 @@ figure img{
   font-size: 2em;
   color: #38b6ff;
   text-shadow: 0 0 7px #40b2f4, 0 0 10px #fff, 0 0 42px #38b6ff, 0 0 77px #ffffff, 0 0 100px #fff;
+  white-space: nowrap;
 }
 
 #Produit{
@@ -440,12 +444,6 @@ a {
 .phone:hover {
   background: #7b7be885;
 }
-/*
-div#cards:hover {
-    transform: rotate(20deg);
-    transform-scale: 10deg;
-    transform: scale(1.05);
-}*/
 #cards:hover {
   transform: scale (10deg);
   transform: scale(1.05);
@@ -454,14 +452,17 @@ div#cards:hover {
   transform: scale (10deg);
   transform: scale(1.05);
 }
+#cards4:hover {
+  transform: scale (10deg);
+  transform: scale(1.05);
+}
 .carousel-container { 
-  width: 80%;
+  width: 100%;
   overflow: hidden;
   position: relative;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin-left: 15px;
   margin-top: 110px;
   margin-bottom: 50px;
 }
@@ -507,5 +508,632 @@ div#cards:hover {
     font-size: 16px;
     font-weight: bold;
     color: #01060e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.boxcard7 figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 20PX 20px;
+}
+.boxcard7 figure {
+  background-color: white;
+  border: 7px solid rgb(252, 250, 250);
+  border-radius: 20px/20px;
+  border-top: 7px solid #f8f4f4;
+  border-bottom: 7px solid #f3efef;
+  background-color: rgb(252, 249, 252);
+  width: 245px;
+  height: 351px;
+}
+
+
+/* Styles pour les tablett */
+@media (max-width: 976px) and (min-width:680px) {
+  #NosProduit figure {
+    color: #FF0000;
+    text-decoration: none;
+    margin-top: 80px;
+}
+
+.boxcard3 figure {
+    width: 245px;
+    height: 251px;
+    /* margin-top: -35px; */
+}
+
+
+figure {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+#Produit figure {
+  /* margin-top: 110px; */
+  position: relative;
+  top: 150px;
+  left: 50px;
+}
+div#cards4 img {
+  width: 450px;
+  position: relative;
+  top: -32px;
+  height: 200px;
+  left: 45%;
+}
+#Produit {
+  background-image: url(./Photos/336682645_1645219719261544_5743086333183299678_n\ \(1\).jpg);
+  width: 100%;
+  margin-top: -120px;
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  grid-auto-rows: minmax(300px, auto);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 2000px;
+}
+h2.tapas{
+  margin-left: 45%;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 110px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+.sep3 {
+  grid-column: 1 / 3;
+  grid-row: 3/ 3;
+  margin-left: 40px;
+}
+.FooterTitre {
+  font-family: 'Big Shoulders Display', cursive;
+  color: rgb(87, 228, 255);
+  font-weight: 600;
+  grid-row: 1 / 3;
+  font-size: 2.6rem;
+  font: bold;
+}
+
+.contact {
+  grid-column: 1 / 3;
+  grid-row: 4/4;
+  width: 68%;
+  margin-top: -15px;
+  margin-left: -42px;
+}
+.phone {
+  background: rgb(255, 255, 255);
+  width: 220%;
+  height: 100px;
+  transform: scale(0.924103, 0.924103);
+  font-style: bold;
+  color: rgb(4, 4, 4);
+  text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: -5px;
+  padding-left: 25px;
+  font-size: 1.5rem;
+  margin-top: -6px;
+  font-family: 'Lato', sans-serif;
+}
+.phone2 {
+  background: #38b6ff;
+  width: 220%;
+  height: 100px;
+  transform: scale(0.924103, 0.924103);
+  font-style: bold;
+  color: rgb(10, 26, 68);
+  text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: -5px;
+  font-size: 2.2rem;
+  margin-top: -6px;
+  margin-bottom: 20px;
+}
+.imageLogo {
+  width: 100%;
+  margin-left: 12%;
+  grid-column: 1 / 3;
+  grid-column: 1 / 3;
+  grid-row: 1/3;
+}
+
+.imageLogo img {
+  width: 50%;
+}
+.boxcard7 figure {
+  background-color: white;
+  border: 7px solid rgb(252, 250, 250);
+  border-radius: 20px/20px;
+  border-top: 7px solid #f8f4f4;
+  border-bottom: 7px solid #f3efef;
+  background-color: rgb(252, 249, 252);
+  width: 445px;
+  height: 251px;
+  grid-row: 1/3;
+  position: relative;
+  top: 550px;
+  right: 700px;
+}
+
+div#NosProduit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(1030px, auto);
+  width: 100%;
+  background-repeat: no-repeat;
+  background: black;
+}
+.boxcard4 figure {
+  background-color: white;
+  border: 7px solid rgb(252, 250, 250);
+  border-radius: 20px/20px;
+  border-top: 7px solid #f8f4f4;
+  border-bottom: 7px solid #f3efef;
+  background-color: rgb(252, 249, 252);
+  width: 245px;
+  height: 351px;
+  margin-left: 55px;
+}
+div#Produit figure {
+  margin: 0px;
+}
+figure img {/*mac*/
+  width: 100%;
+  margin-bottom: -8px;
+  border-radius: 20px 20px 1px 1px;
+  background-size: cover;
+  height: 25%;
+}
+div#cards4 {
+  MARGIN-BOTTOM: 101px;
+}
+}
+@media (max-width: 680px) and (min-width:465px) {
+  div#cards4 img {
+    width: 100%;
+    position: relative;
+    top: -32px;
+    height: 200px;
+    left: 45%;
+}
+
+div#cards4 {
+    MARGIN-BOTTOM: 151px;
+    position: relative;
+    left: -40%;
+}
+#Produit {
+    background-image: url(./Photos/336682645_1645219719261544_5743086333183299678_n\ \(1\).jpg);
+    width: 100%;
+    margin-top: -120px;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-auto-rows: minmax(250px, auto);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 3000px;
+    /* margin-left: 15%; */
+}
+div#Produit figure {
+    margin: 0px;
+    width: 89%;
+    height: 201px;
+}
+#Produit figure {
+    /* margin-top: 110px; */
+    position: relative;
+    top: 150px;
+    left: 5%;
+    width: 245px;
+    height: 251px;
+}
+  #NosProduit figure {
+    color: #FF0000;
+    text-decoration: none;
+    margin-top: 80px;
+}
+
+.boxcard3 figure {
+    width: 245px;
+    height: 251px;
+}
+
+figure {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+h2.tapas{
+  margin-left: 45%;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 110px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+.sep3 {
+  grid-column: 1 / 3;
+  grid-row: 3/ 3;
+  margin-left: 40px;
+}
+.FooterTitre {
+  font-family: 'Big Shoulders Display', cursive;
+  color: rgb(87, 228, 255);
+  font-weight: 600;
+  grid-row: 1 / 3;
+  font-size: 2.6rem;
+  font: bold;
+}
+
+.contact {
+  grid-column: 1 / 3;
+  grid-row: 4/4;
+  width: 68%;
+  margin-top: -15px;
+  margin-left: -42px;
+}
+.phone {
+  background: rgb(255, 255, 255);
+  width: 220%;
+  height: 100px;
+  transform: scale(0.924103, 0.924103);
+  font-style: bold;
+  color: rgb(4, 4, 4);
+  text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: -5px;
+  padding-left: 25px;
+  font-size: 1.5rem;
+  margin-top: -6px;
+  font-family: 'Lato', sans-serif;
+}
+.phone2 {
+  background: #38b6ff;
+  width: 220%;
+  height: 100px;
+  transform: scale(0.924103, 0.924103);
+  font-style: bold;
+  color: rgb(10, 26, 68);
+  text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: -5px;
+  font-size: 2.2rem;
+  margin-top: -6px;
+  margin-bottom: 20px;
+}
+.imageLogo {
+  width: 100%;
+  margin-left: 12%;
+  grid-column: 1 / 3;
+  grid-column: 1 / 3;
+  grid-row: 1/3;
+}
+
+.imageLogo img {
+  width: 50%;
+}
+
+.boxcard7 figure {
+  background-color: white;
+  border: 7px solid rgb(252, 250, 250);
+  border-radius: 20px/20px;
+  border-top: 7px solid #f8f4f4;
+  border-bottom: 7px solid #f3efef;
+  background-color: rgb(252, 249, 252);
+  width: 82%;
+  height: 251px;
+  grid-row: 1/3;
+  position: relative;
+  top: -20px;
+  right: -35px;
+}
+
+div#NosProduit {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(420px, auto);
+  width: 100%;
+  background-repeat: no-repeat;
+  background: black;
+}
+
+.boxcard4 figure {
+  background-color: white;
+  border: 7px solid rgb(252, 250, 250);
+  border-radius: 20px/20px;
+  border-top: 7px solid #f8f4f4;
+  border-bottom: 7px solid #f3efef;
+  background-color: rgb(252, 249, 252);
+  margin-left: 55px;
+  width: 80%;
+  height: 251px;
+}
+
+figure img {/*mac*/
+  width: 100%;
+  margin-bottom: -8px;
+  border-radius: 20px 20px 1px 1px;
+  background-size: cover;
+  height: 25%;
+}
+figure {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  MARGIN-TOP: 15px;
+  margin-left: 15px;
+}
+figure img {
+  width: 100%;
+  margin-bottom: -8px;
+  border-radius: 20px 20px 1px 1px;
+  background-size: cover;
+  height: 40%;
+}
+}
+
+@media (max-width: 465px) and (min-width:300px) {
+  div#cards4 img {
+    width: 100%;
+    position: relative;
+    top: -32px;
+    height: 200px;
+    left: 45%;
+}
+
+div#cards4 {
+    MARGIN-BOTTOM: 151px;
+    position: relative;
+    left: -40%;
+}
+#Produit {
+    background-image: url(./Photos/336682645_1645219719261544_5743086333183299678_n\ \(1\).jpg);
+    width: 100%;
+    margin-top: -120px;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-auto-rows: minmax(250px, auto);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 3000px;
+}
+div#Produit figure {
+    margin: 0px;
+    width: 89%;
+    height: 201px;
+}
+#Produit figure {
+    position: relative;
+    top: 150px;
+    width: 245px;
+    height: 251px;
+}
+
+.boxcard3 figure {
+    width: 245px;
+    height: 251px;
+}
+
+figure {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+h2.tapas{
+  margin-left: 45%;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 110px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+.sep3 {
+  grid-column: 1 / 3;
+  grid-row: 3/ 3;
+  margin-left: 40px;
+}
+.FooterTitre {
+  font-family: 'Big Shoulders Display', cursive;
+  color: rgb(87, 228, 255);
+  font-weight: 600;
+  grid-row: 1 / 3;
+  font-size: 2rem;
+  font: bold;
+  width: 180%;
+  MARGIN-LEFT: -32px;
+}
+
+.imageLogo {
+  width: 100%;
+  margin-left: 12%;
+  grid-column: 1 / 3;
+  grid-column: 1 / 3;
+  grid-row: 1/3;
+}
+
+.imageLogo img {
+  width: 70%;
+}
+
+.boxcard7 figure {
+  background-color: white;
+  border: 7px solid rgb(252, 250, 250);
+  border-radius: 20px/20px;
+  border-top: 7px solid #f8f4f4;
+  border-bottom: 7px solid #f3efef;
+  background-color: rgb(252, 249, 252);
+  width: 82%;
+  height: 251px;
+  grid-row: 1/3;
+  position: relative;
+  top: -20px;
+}
+
+div#NosProduit {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(420px, auto);
+  width: 100%;
+  background-repeat: no-repeat;
+  background: black;
+}
+
+figure img {/*mac*/
+  width: 100%;
+  margin-bottom: -8px;
+  border-radius: 20px 20px 1px 1px;
+  background-size: cover;
+  height: 25%;
+  margin-left: 0px;
+}
+figure {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  MARGIN-TOP: 15px;
+  margin-left: 25px !important;
+}
+figure img {
+  width: 100%;
+  margin-bottom: -8px;
+  border-radius: 20px 20px 1px 1px;
+  background-size: cover;
+  height: 40%;
+}
+
+h2.avisTitre {
+  background: #FFB923;
+  margin: 0;
+  color: white;
+  position: relative;
+  top: 105px;
+  margin-left: 25px;
+  font-size: 2.5rem;
+  font-family: 'Big Shoulders Display', cursive;
+}
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 110px;
+  margin-bottom: 50px;
+  margin-top: 145px;
+}
+    p{
+      width: 255px;
+    }
+    h2.productoTitre {
+      background: black;
+      margin: 0;
+      color: white;
+      position: relative;
+      top: 50px;
+      margin-left: 25px;
+      font-size: 1.9rem;
+      font-family: 'Big Shoulders Display', cursive;
+  }
+
+  #NosProduit figure {
+    color: #FF0000;
+    text-decoration: none;
+    margin-top: 80px;
+    margin-right: 5px;
+}
+.boxcard4 figure {
+    background-color: white;
+    border: 7px solid rgb(252, 250, 250);
+    border-radius: 20px/20px;
+    border-top: 7px solid #f8f4f4;
+    border-bottom: 7px solid #f3efef;
+    background-color: rgb(252, 249, 252);
+    margin-left: 55px;
+    width: 86%;
+    height: 251px;
+}
+.testimonial-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-left: -282px;
+
+}
+  span.aver {
+    margin-left: 0px !important
+}
+
+.contact {
+  grid-column: 1 / 3;
+  grid-row: 4/4;
+  width: 68%;
+  margin-top: -15px;
+  margin-left: -32px;
+}
+.phone {
+  background: rgb(255, 255, 255);
+  width: 205%;
+  height: 100px;
+  transform: scale(0.924103, 0.924103);
+  font-style: bold;
+  color: rgb(4, 4, 4);
+  text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: -5px;
+  padding-left: 25px;
+  font-size: 1.5rem;
+  margin-top: -6px;
+  font-family: 'Lato', sans-serif;
+}
+.phone2 {
+  background: #38b6ff;
+  width: 205%;
+  height: 100px;
+  transform: scale(0.924103, 0.924103);
+  font-style: bold;
+  color: rgb(10, 26, 68);
+  text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: -5px;
+  font-size: 2.2rem;
+  margin-top: -6px;
+  margin-bottom: 20px;
+}
+svg {
+  font-size: 2rem;
+  padding-left: 10px;
+  margin-top: 28px;
+}
 }
 
