@@ -165,7 +165,7 @@ figure img{
   background-color: rgb(87 228 255 / 68%);
   cursor: pointer;
 }
-.Filtre h3{
+.Filtre h2{
   font-family: 'Big Shoulders Display', cursive;
   font-size: 2em;
   color: #38b6ff;
@@ -606,7 +606,7 @@ p {
   font: bold;
   font-weight: 500;
 }
-.Filtre h3 {
+.Filtre h2 {
   font-family: 'Big Shoulders Display', cursive;
   font-size: 3em;
   color: #38b6ff;
