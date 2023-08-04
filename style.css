@@ -185,6 +185,19 @@ figure img{
   background-position-y: -235px;
   background-size: 100%
 }
+#Produit figcaption {
+  margin-top: -55%;
+  text-align: center;
+  opacity: 0;
+  background: #808080bf;
+  position: relative;
+  color: black;
+  font: bold;
+  font-size: 1.1rem;
+}
+#Produit figure:hover figcaption {
+  opacity: 1;
+}
 .boxcard figure {
     width: 235px;
     height: 220px;
@@ -205,7 +218,7 @@ h2.tapas {
   color: #ff1d0d;
   text-shadow: 0 0 7px #40b2f4, 0 0 10px #fff, 0 0 42px #38b6ff, 0 0 77px #ffffff, 0 0 100px #fff;
   margin-top: 15px;
-  margin-left: 455px;
+  margin-left: 45%;
   background: black;
   z-index: 9999;
 }
@@ -538,7 +551,17 @@ html, body {
   width: 245px;
   height: 351px;
 }
-
+@media (max-width: 680px) and (min-width:330px) {
+  #Produit figcaption {
+    margin-top: -25%;
+}
+}
+@media (max-width: 3000px) and (min-width:1600px) {
+  #Produit figcaption {
+    margin-top: -25%;
+    font-size: 1.8rem;
+}
+}
 @media (max-width: 1450px) and (min-width:977px) {
   .FooterTitre {
     font-family: 'Big Shoulders Display', cursive;
